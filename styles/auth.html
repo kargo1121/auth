@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="background-color-container">
+    <div class="container">
+        <form class="auth-form" name="form-auth" method="post">
+            <label class="auth-form-label">
+                <input class="auth-form-input input-email" type="email" placeholder=" " name="email" autocomplete="off" required>
+                <span class="auth-form-placeholder ">email</span>
+            </label>
+            <label class="auth-form-label">
+                <input class="auth-form-input input-password" id="passInput" placeholder=" " type="password" name="password" autocomplete="off" required>
+                <span class="auth-form-placeholder">password</span>
+                <div class="auth-form-toggler">
+                    <i class="la la-eye auth-form-icon">
+                        <img class="auth-form-view" src="../image/view.png" alt="view">
+                        <img class="auth-form-hidden" src="../image/hidden.png" alt="hidden">
+                    </i>
+<!--                    <input type="checkbox" class="auth-form-checkbox password-toggler">-->
+                </div>
+            </label>
+            <div class="auth-form-answer"></div>
+            <input class="auth-form-submit" type="submit" value="login">
+            <div class="auth-form-bottom">
+                <span>Have no account?</span>
+                <a href="#">Create new</a>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="hint"></div>
+<script src="./auth.js"></script>
+<!--<div class="container">-->
+<!--    <div class="auth-form-container">-->
+<!--        <p class="author">ავტორიზაცია</p>-->
+<!--        <form action="" method="get">-->
+<!--            <div class="form-group">-->
+<!--                <label class="text-input-label" for="username">მომხმარებლის სახელი</label>  -->
+<!--                <input class="text-input" type="text" name="username" id="username" placeholder="ჩაწერეთ თქვენი სახელი">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <label class="text-input-label" for="pass">პაროლი</label>-->
+<!--                <input class="text-input" type="password" name="pass" id="pass" placeholder="ჩაწერეთ პაროლი">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--                <input type="checkbox" id="save" name="save">-->
+<!--                <label for="save">დამახსოვრება</label>-->
+<!--            </div>-->
+<!--            <button class="submit-button">შესვლა</button>-->
+<!--            <div>-->
+<!--                <a class="reset-pass-link" href="#">პაროლის აღდგენა</a>-->
+<!--            </div>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
+</html>
